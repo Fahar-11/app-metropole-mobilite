@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Métropole Mobilité - E-tickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="asset/css/styles.css">
+</head>
+
+<!-------------------------------------------- Page 2 ------------------------------------>
+<body>
+    <section class="contenu-page-2">
+    <header>
+        <h2>E-tickets</h2>
+    </header>
+        <h3 class="h3-page2">Aucun titre à utiliser</h3>
+        <p class="p-page2">Vous pouvez acheter des titres pour voyager sur le réseau</p>
+        <div class="div-btn-general">
+            <button class="btn-general" id="btn-acheter-titres">Acheter des titres</button>
+        </div>
+    </section>
+    <!------------------------------------- Connexion impossible --------------------------------------->
+    <section class="msg-error">
+        <div class="img-dino-error">
+            <img src="asset/img/img-dino.png" alt="" class="img-dino">
+        </div><br>
+        <h3 class="h3-connexion-impossible">Impossible de se connecter à Internet</h3>
+        <p class="p-connexion-impossible ">Cette page Web ne peut s'afficher dans votre navigateur, car votre
+            ordinateur n'est pas connecté à Internet.</p>
+    </section>
+    <!-------------------------------------- Acheter un titre ----------------------------------------->
+    <section class="acheter-titres-1">
+        <header>
+            <p class="lien-retour" id="lien-accueil">E-tickets</p>
+            <h2>Acheter</h2>
+        </header>
+        <section class="type-ticket">
+            <img src="asset/img/mini-ticket.png" alt="" class="mini-ticket">
+            <div class="titre-ticket">
+                <p class="name-type-ticket">1 VOYAGE AIX EN BUS</p>
+                <p class="modalité-ticket">Valable 60 minutes</p>
+            </div>
+        </section>
+        <section class="btns-nbrs-tickets">
+            <button class="moins" onclick="lowerNumber()"> - </button>
+            <div class="chiffre"> 0 </div>
+            <button class="plus" onclick="increaseNumber()" > + </button>
+        </section>
+        <br>
+        <hr>
+        <section class="type-ticket">
+            <img src="asset/img/mini-ticket.png" alt="" class="mini-ticket">
+            <div class="titre-ticket">
+                <p class="name-type-ticket">10 VOYAGES AIX EN BUS</p>
+                <p class="modalité-ticket">Valable 60 minutes sur Aix En Bus <br>Multi-validable</p>
+            </div>
+        </section>
+        <section class="btns-nbrs-tickets">
+            <button class="moins" onclick="lowerNumberTwo()"> - </button>
+            <div class="chiffreTwo"> 0 </div>
+            <button class="plus" onclick="increaseNumberTwo()"> + </button>
+        </section>
+        <div class="div-btn-acheter">
+            <button class="btn-general" id="btn-acheter">Acheter</button>
+        </div>
+    </section>
+
+    <!------------------------------------------------- Panier --------------------------------------->
+    <section class="panier">
+        <header>
+            <p class="lien-retour" id="lien-panier">Retour au panier</p>
+            <h2>Paiement</h2>
+        </header>
+        <div class="total-commande">
+            <p>Total de la commande :</p>
+            <p>1,20$</p>
+        </div>
+        <hr>
+        <div class="resume-commande">
+            <p>1 VOYAGE AIX EN BUS</p>
+            <p>1 x 1,20$</p>
+        </div>
+        <div>
+            <input type="checkbox" id="cgv" name="cgv" />
+            <label for="cgv">J'ai lu et j'accepte <a href="https://www.lametropolemobilite.fr/cgv/">les conditions
+                    générales de vente</a></label>
+        </div>
+        <div class="div-btn-payer-before">
+            <button class="btn-payer-before">Payer</button>
+        </div>
+    </section>
+    <!------------------------------------ Formulaire de paiement--------------------------------------->
+
+
+    <section class="form-payment">
+        <header>
+            <h2>Paiement</h2>
+        </header>
+        <section class="logo-lang">
+            <img src="asset/img/logo-laMetropoleMobiliteRectangle.png" alt="" class="logo-metropole">
+            <button class="name-lang">FR</button>
+        </section>
+        <div class="montant">
+            <h3>MONTANT : 1,20$</h3>
+        </div>
+        <form action="">
+                <ul>
+            <li>
+                    <label for="number-card">Numéro de carte&nbsp;:</label><br>
+                    <input type="text" id="number-card" name="number_card" />
+                    <img src="asset/img/point-interrogation.png" alt="" class="point-interro">
+                </li>
+
+                <div>
+                    <li>
+                        <label for="mois-annee-select">Expire le &nbsp;:</label><br>
+                        <select name="mois" id="mois-select">
+                            <option value="">mois</option>
+                            <option value="J">Janvier</option>
+                            <option value="F">Février</option>
+                            <option value="M">Mars</option>
+                            <option value="A">Avril</option>
+                            <option value="Ma">Mai</option>
+                            <option value="Ju">Juin</option>
+                        </select>
+                        <select name="annee" id="annee-select">
+                            <option value="">année</option>
+                            <option value="yearOne">2025</option>
+                            <option value="yearTwo">2026</option>
+                            <option value="yearThree">2027</option>
+                            <option value="yearFor">2028</option>
+                        </select>
+                    </li>
+                </div>
+                <li class="crypto-visu">
+                    <label for="crypto">Cryptogramme visuel&nbsp;:</label><br>
+                    <input type="text" id="crypto" name="crypto-visuel" />
+                    <img src="asset/img/point-interrogation.png" alt="" class="point-interro">
+                </li>
+                </ul>
+        </form>
+        <div class="div-btn-valider-payment">
+            <button class="btn-valider-payment" type="button">VALIDER</button>
+        </div>
+        <div class="img-form-payment-1">
+            <img src="asset/img/logo-visa.png" alt="">
+            <img src="asset/img/paiement-securise.png" alt="">
+            <img src="asset/img/logo-mastercard.png" alt="">
+        </div>
+        <a href=""class="annuler-retourner">Annuler et retourner à la boutique</a>
+        <hr>
+        <div class="img-form-payment-2">
+            <img src="asset/img/logo-payzen.png" alt="">
+            <img src="asset/img/logo-pci-dss.png" alt="">
+        </div>
+    </section>
+
+    <!---------------------------------Paiement accepté------------------------------------------------->
+
+    <section class="paiement-accepte">
+        <header>
+            <h2>Paiement</h2>
+        </header>
+        <div class="img-class">
+            <img src="asset/img/paiement-accepte.png" alt="" class="img-paiement-accepte">
+        </div>
+        <div class="msg-paiement-accepte">
+            <h3>Paiement accepté</h3>
+            <p class="p-paiement-accepte">Retrouvez vos titres dans votre compte et utilisez-les pour voyager facilement</p>
+        </div>
+        <div class="div-btn-fermer">
+            <button class="btn-general" id="fermer">Fermer</button>
+        </div>
+</section>
+     <!--------------------------------------------Page 2 Use------------------------------------------->
+
+     <section class="pageUseTwo">
+        <header>
+            <h2>E-tickets</h2>
+        </header>
+        <div class="container">
+            <div class="content">
+                <img src="asset/img/leticket.png" alt="" class="ticket">
+                <p class="text">1 VOYAGE AIX EN BUS <br> 1leticket disponible</p>
+            </div>
+           <button class="btn-general" id="Acheter-des-titres">Acheter des titres</button>
+        </div>
+    </section>
+
+     <!-------------------------------------------Menu Page 2 Use ---------------------------------------->
+    
+    <section class="menuUseTwo">
+        <div class="menu">
+            <div class="cross" id="crossTwo">X</div>
+            <h4>1 VOYAGE AIX EN BUS</h4>
+            <p class="voyage-disponible">1 voyage disponible</p>
+            <p class="p-page2">Vous utilisez</p>
+            <div class="div-le-bus">
+                <label for="lebus">Le Bus</label>
+                <input type="checkbox" id="le-bus" name="lebus" />
+            </div>
+            <div class="div-btn-use">
+                <button onclick="start()" class="btn-general" id="utiliser">Utiliser</button>
+            </div>
+        </div>
+    </section>
+
+     <!-------------------------------------------page votre voyage ---------------------------------------->
+
+     <section class="page-voyage">
+        <header>
+            <p class="lien-retour" id="lien-page-selected-two">E-tickets</p>
+            <h2>Votre voyage</h2>
+        </header>
+     <div class="ticket-votre-voyage">
+            <img src="asset/img/leticket.png" alt="" class="ticket" id="ticket-en-cours">
+            <p class="text">Fin de validité : </p>
+            <div class="countdown" id="time">
+            </div>
+            </section>
+
+    <!-------------------------------------------menu page votre voyage---------------------------------------->
+
+    <section class="menuPageVoyage">
+        <div class="cross" id="crossThree">X</div>
+            <h4 class="mes-validations">Mes validations</h4>
+            <div class="menu-page-voyage">
+            <p class="date-jour-voyage">Aujourd'hui - Samedi 8 juin</p>
+            <div>
+                <p>1 validation</p>
+                <p class="p-titre-menu-page-voyage">1 VOYAGE EN BUS</p>
+            </div>
+            <div class="point-interro-correspondance">
+                <div class="point-interro-menu-page-voyage">?</div>
+                <p class="correspondance">Correspondance, accés au Métro, Contrôle</p>
+            </div>
+            <div class="div-btn-validations">
+                <button class="btn-general" id="metro-ou-controle">Métro ou Contrôle</button>
+                <button class="btn-general" id="prendre-une-correspondance">Prendre une correspondance</button>
+            </div>
+        </div>
+    </section>
+
+     <!-------------------------------------------Page metro ou contrôle---------------------------------------->
+    <section class="page-metro-controle">
+        <p class="cross" id="crossOne">X</p>
+            <img src="asset/img/qrcode.png" alt="">
+            <p class="dernier-refresh">Dernier raffraîchissement à 22:58</p>
+        <p class="p-titre-menu-page-voyage">1 VOYAGE AIX EN BUS</p>
+        <div class="date-validation">
+            <p>DATE DE VALIDATION</p>
+            <p>08/06/2024 à 13:56</p>
+        </div>
+        <div>
+        <p>FIN DE VALIDITÉ</p>
+        <p>08/06/2024 à 14:56</p>
+        </div>
+    </section>
+     <!-------------------------------------------page 2 selected---------------------------------------->
+
+     <section class="pageSelectedTwo">
+        <header>
+            <h2>E-tickets</h2>
+        </header>
+        <div class="container">
+            <div class="content">
+                <img src="asset/img/leticket.png" alt="" class="ticket" id="ticket-selected">
+                <p class="titre-cours-utilisation">Titre en cours d'utilisation</p>
+                <p class="text">1 VOYAGE AIX EN BUS <br> 1leticket disponible</p>
+            </div>
+           <button class="btn-general" id="Acheter-des-titres-trois">Acheter des titres</button>
+        </div>
+    </section>
+
+    <script src="asset/js/buyTicket.js"></script>
+    <script src="asset/js/useTicket.js"></script>
+</html>
+</body>
