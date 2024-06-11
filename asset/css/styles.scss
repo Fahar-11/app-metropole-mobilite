@@ -1,0 +1,531 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+
+    header {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background: linear-gradient(to bottom right, #fc7d2e, #eb521d);
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        color: white;
+        font-size: medium;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h4 {
+        margin-bottom: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .img-down {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .h3-page2 {
+        color: #303030;
+        text-align: center;
+    }
+
+    .p-page2 {
+        color: #303030;
+        text-align: center;
+        font-size: small;
+    }
+
+    .div-btn-general{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-general {
+        background-color: #d92e10;
+        height: 50px;
+        width: 200px;
+        border-radius: 5px;
+        color: white;
+        font-weight: 800;
+        margin-top: 30px;
+        border: none;
+    }
+
+    .img-dino {
+        display: flex;
+        margin-top: 300px;
+    }
+
+    .h3-connexion-impossible {
+        font-weight: 500;
+        color: #383e42;
+    }
+
+    .p-connexion-impossible {
+        color: #383e42;
+        font-size: small;
+    }
+
+    .type-ticket {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        margin-right: 150px;
+
+        .mini-ticket {
+            width: 50px;
+            height: 50px;
+        }
+
+        .titre-ticket {
+            display: flex;
+            flex-direction: column;
+
+            .modalité-ticket {
+                color: gray;
+            }
+
+            .name-type-ticket {
+                font-weight: 900;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .btns-nbrs-tickets {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .moins {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px;
+            border: none;
+        }
+
+        .plus {
+            background-color: #d92e10;
+            color: white;
+            padding: 8px;
+            border-radius: 10px;
+            margin: 20px;
+            border: none;
+        }
+
+        .chiffre {
+            font-weight: 700;
+        }
+
+        .chiffreTwo{
+            font-weight: 700;
+        }
+    }
+
+    .div-btn-acheter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .total-commande {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 800;
+    }
+
+    .resume-commande {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #cgv {
+        margin-top: 100px;
+    }
+
+    .div-btn-payer-before {
+        display: flex;
+        justify-content: center;
+
+        .btn-payer-before {
+            background-color: #ec9687;
+            height: 50px;
+            width: 200px;
+            border-radius: 5px;
+            color: white;
+            font-weight: 800;
+            margin-top: 30px;
+            border: none;
+        }
+    }
+
+    .logo-lang {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 80px;
+        position: static;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+
+        .logo-metropole {
+            width: 250px;
+        }
+
+        .name-lang {
+            background-color: #383e42;
+            width: 50px;
+            height: 50px;
+            color: white;
+            font-weight: 800;
+        }
+    }
+
+    .montant {
+        color: #383e42;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    form {
+        margin-top: 80px;
+        padding: 20px;
+
+        ul {
+            list-style: none;
+
+            li {
+                margin: 30px;
+
+                label {
+                    color: #383e42;
+                    font-weight: 700;
+                }
+
+                .point-interro {
+                    width: 10px;
+                    background-color: #D3D3D3;
+                    padding: 5px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .div-btn-valider-payment {
+        display: flex;
+        justify-content: center;
+
+        .btn-valider-payment {
+            padding: 15px;
+            width: 100px;
+            background-color: #3675ba;
+            color: white;
+            font-weight: 700;
+            margin-right: 60px;
+        }
+    }
+
+    .img-form-payment-1 {
+        margin-top: 20px;
+    }
+
+    .annuler-retourner {
+        color: #383e42;
+        text-align: end;
+    }
+
+    .img-form-payment-2 {
+        display: flex;
+    }
+
+    .img-paiement-accepte {
+        width: 200px;
+    }
+
+    .p-paiement-accepte {
+        color: #383e42;
+        font-size: small;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .ticket {
+                margin-top: 100px;
+                border-radius: 10px;
+            }
+
+            .text {
+                text-align: center;
+                color: #303030;
+                font-weight: 700;
+                font-size: small;
+            }
+        }
+    }
+
+    .menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding-bottom: 50px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 5px 5px 5px 5px grey;
+        display: none;
+
+        .voyage-disponible {
+
+            padding-left: 20px;
+            color: gray;
+        }
+
+        .div-le-bus {
+            background-color: #d3d3d3;
+            width: 350px;
+            padding: 10px;
+            margin-left: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div-btn-use {
+            display: flex;
+            justify-content: center;
+
+            .button-use {
+                border-radius: 5px;
+                color: white;
+                font-weight: 800;
+                margin-top: 30px;
+                border: none;
+                height: 50px;
+                width: 200px;
+                background-color: #ec9687;
+            }
+        }
+    }
+
+    .img-paiement-accepte {
+        width: 200px;
+        align-items: center;
+    }
+
+    .img-class {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+
+    .msg-paiement-accepte {
+        text-align: center;
+    }
+
+    .div-btn-fermer {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .ticket-votre-voyage {
+        margin-top: 100px;
+        .countdown {
+            display: flex;
+            justify-content: space-around;
+           font-weight: 700;
+           font-size: larger;
+        } 
+    }
+    
+    .mes-validations {
+        text-align: center;
+    }
+
+    .menu-page-voyage {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        
+        .date-jour-voyage {
+            background-color: #f7f7f7;
+            width: 200px;
+            padding: 5px;
+        }
+
+        .p-titre-menu-page-voyage {
+            font-weight: 700;
+        }
+    }
+
+    .point-interro-correspondance {
+        display: flex;
+        flex-direction: row;
+
+        .point-interro-menu-page-voyage {
+            background-color: #d92e10;
+            color: white;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            display: block;
+            margin-top: 15px;
+            margin-right: 5px;
+        }        
+    }
+
+    .div-btn-validations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .date-validation{
+        margin-bottom: 25px;
+    }
+
+    #crossTwo{
+        position: absolute;
+       right: 0;
+       margin-right: 20px;
+       margin-top: 20px;
+    }
+    
+    #crossThree{
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .lien-retour{
+        font-size: 700;
+        position: absolute;
+        color: white;
+        left: 0;
+        margin-left: 20px;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+
+
+.lien-page-selected-two{
+    position: absolute;
+    color: white;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+}
+
+.msg-error {
+    display: none;
+ 
+}
+
+.contenu-page-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.acheter-titres-1 {
+    display: none;
+}
+
+.panier {
+    display: none;
+}
+
+.form-payment {
+    display: none;
+}
+
+.paiement-accepte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.pageUseTwo {
+    display: none;
+}
+
+.pageSelectedTwo{
+    display: none;
+    .titre-cours-utilisation{
+        position: absolute;
+        color: white;
+        margin-top: 40px;
+    }
+}
+
+.menuPageVoyage {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 5px 5px 5px 5px grey;
+    display: none;
+    .date-jour-voyage {
+        background-color: #f7f7f7;
+        width: 200px;
+        padding: 5px;
+    }
+}
+
+.page-voyage{
+display: none;
+}
+
+.page-metro-controle{
+    margin-top: 50px;
+    display: none;
+}
+
+.dernier-refresh{
+    color: #D3D3D3;
+}
+
+#ticket-selected{
+    filter: brightness(20%);
+}
+
+.menu-principal{
+   position: absolute;
+   bottom: 0;
+   display: flex;
+}
